@@ -1,0 +1,20 @@
+{
+  "name": "dynamics-partner-advisor",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server for finding and comparing Microsoft Dynamics 365 partners by product, industry, and region.",
+  "transport": {
+    "type": "sse",
+    "endpoint": "/api/mcp/sse",
+    "messages": "/api/mcp/messages"
+  },
+  "tools": [
+    "search_partners",
+    "get_partner_details",
+    "recommend_shortlist"
+  ],
+  "legacyEndpoints": {
+    "search_partners": "/api/mcp/search_partners",
+    "get_partner_details": "/api/mcp/get_partner_details",
+    "recommend_shortlist": "/api/mcp/recommend_shortlist"
+  }
+}
